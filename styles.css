@@ -1,210 +1,117 @@
-/* RESET */
+/* styles.css */
 
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Segoe UI", "Noto Sans Devanagari", sans-serif;
 }
 
 body {
-    background: #f7f1e3;
+    background-color: #fff8e1;
     color: #4e342e;
-    line-height: 1.7;
 }
 
-/* HEADER */
-
+/* Header */
 header {
-    background: linear-gradient(135deg, #9c1c1c, #7a1245);
+    background: linear-gradient(45deg, #b71c1c, #880e4f);
     color: #fff8e1;
+    padding: 25px;
     text-align: center;
-    padding: 60px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 header h1 {
-    font-size: 4.5rem;
+    font-size: 2.8em;
     margin-bottom: 10px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 header p {
-    font-size: 1.4rem;
     font-style: italic;
+    font-size: 1.2em;
 }
 
-/* NAVIGATION */
-
+/* Navigation Bar */
 nav {
     background-color: #bf360c;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    padding: 16px;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav a {
     color: #fff8e1;
     text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s ease;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: transform 0.3s, color 0.3s;
 }
 
 nav a:hover {
     color: #ffd54f;
+    transform: scale(1.1);
 }
 
-/* MAIN */
-
-main {
-    max-width: 1300px;
-    margin: 60px auto;
-    padding: 0 30px;
-}
-
-/* HERO SECTION */
-
-.container {
-    background: linear-gradient(135deg, #fffaf2, #fff4e6);
-    border-radius: 30px;
-    padding: 70px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 80px;
-
-    min-height: 550px;
-}
-
-/* TEXT */
-
-.central-box {
-    flex: 1;
-}
-
-.central-box h2 {
-    color: #880e4f;
-    font-size: 3.6rem;
-    line-height: 1.15;
-    margin-bottom: 25px;
-}
-
-.central-box p {
-    font-size: 1.2rem;
-    margin-bottom: 18px;
-}
-
-/* QUOTE */
-
-.central-box div {
-    margin-top: 30px;
-    text-align: center;
-    font-style: italic;
-    font-size: 1.15rem;
-    color: #6d4c41;
-}
-
-/* IMAGE */
-
+/* Side Image */
 .side-img {
-    width: 380px;
+    width: 200px;
     height: auto;
-    flex-shrink: 0;
-
-    filter: drop-shadow(0 12px 25px rgba(0,0,0,0.15));
+    border-radius: 10px;
+    float: right;
 }
 
-/* BUTTON */
+/* Main Content */
+main {
+    padding: 40px;
+    background-color: #fbe9e7;
+    border: 5px double #d84315;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
 
+main h2 {
+    font-size: 2.2em;
+    color: #880e4f;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #b71c1c;
+    color: #fff8e1;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+}
+
+/* Explore More Button */
 .explore-btn {
     display: inline-block;
-    margin-top: 35px;
-
-    background: linear-gradient(135deg, #b71c1c, #d84315);
-    color: white;
+    background: linear-gradient(135deg, #d32f2f, #f57c00);
+    color: #fff8e1;
+    padding: 15px 35px;
+    margin: 30px 0;
+    font-size: 1.2em;
     text-decoration: none;
-
-    padding: 18px 40px;
     border-radius: 50px;
-
-    font-size: 1.1rem;
-    font-weight: 700;
-
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
 
 .explore-btn:hover {
-    transform: translateY(-3px);
-}
-
-/* WHY SINDHISPARK */
-
-.home-intro {
-    margin-top: 70px;
-    background: #fffaf2;
-    border-radius: 25px;
-    padding: 50px;
-    text-align: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-.home-intro h2 {
-    color: #880e4f;
-    font-size: 2.5rem;
-    margin-bottom: 25px;
-}
-
-.home-intro p {
-    max-width: 850px;
-    margin: 0 auto 18px auto;
-    font-size: 1.1rem;
-}
-
-/* FOOTER */
-
-footer {
-    text-align: center;
-    padding: 35px;
-    margin-top: 60px;
-    color: #6d4c41;
-}
-
-/* MOBILE */
-
-@media (max-width: 900px) {
-
-    .container {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 40px 25px;
-        gap: 30px;
-        min-height: auto;
-    }
-
-    .side-img {
-        width: 220px;
-    }
-
-    .central-box h2 {
-        font-size: 2.4rem;
-    }
-
-    header h1 {
-        font-size: 3rem;
-    }
-
-    header p {
-        font-size: 1.1rem;
-    }
-
-    .home-intro {
-        padding: 35px 25px;
-    }
-
-    .home-intro h2 {
-        font-size: 2rem;
-    }
+    background: linear-gradient(135deg, #c62828, #ef6c00);
+    transform: scale(1.1);
 }
