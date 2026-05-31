@@ -1,164 +1,193 @@
 /* RESET */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  }
 
 body {
-    background-color: #f5efe0;
-    color: #4e342e;
+background-color: #f7f1e3;
+color: #4e342e;
+line-height: 1.6;
 }
 
 /* HEADER */
 
 header {
-    background: linear-gradient(45deg, #b71c1c, #880e4f);
-    color: #fff8e1;
-    padding: 40px 20px;
-    text-align: center;
+background: linear-gradient(45deg, #9c1c1c, #7a1245);
+color: #fff8e1;
+padding: 50px 20px;
+text-align: center;
 }
 
 header h1 {
-    font-size: 4rem;
-    margin-bottom: 10px;
+font-size: 4rem;
+margin-bottom: 10px;
+letter-spacing: 1px;
 }
 
 header p {
-    font-size: 1.5rem;
-    font-style: italic;
+font-size: 1.4rem;
+font-style: italic;
 }
 
 /* NAVIGATION */
 
 nav {
-    background-color: #bf360c;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+background-color: #bf360c;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+padding: 15px;
 }
 
 nav a {
-    color: #fff8e1;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
+color: #fff8e1;
+text-decoration: none;
+font-weight: 600;
+transition: 0.3s;
 }
 
 nav a:hover {
-    color: #ffd54f;
+color: #ffd54f;
 }
 
-/* HERO SECTION */
+/* MAIN */
 
 main {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 0 40px;
+max-width: 1200px;
+margin: 50px auto;
+padding: 0 25px;
 }
+
+/* HERO CARD */
 
 .container {
-    background-color: #fbe9e7;
-    border: 4px double #d84315;
-    border-radius: 25px;
-    padding: 60px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+background-color: #fffaf2;
+border: 3px solid #d84315;
+border-radius: 20px;
+padding: 50px;
+box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
+```
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 50px;
+```
+
 }
 
-/* TEXT SECTION */
+/* TEXT */
 
 .central-box {
-    flex: 1;
+flex: 1;
 }
 
 .central-box h2 {
-    font-size: 3rem;
-    color: #880e4f;
-    margin-bottom: 25px;
-    line-height: 1.2;
+color: #880e4f;
+font-size: 2.8rem;
+margin-bottom: 20px;
 }
 
 .central-box p {
-    font-size: 1.25rem;
-    line-height: 1.8;
-    margin-bottom: 18px;
+font-size: 1.15rem;
+margin-bottom: 15px;
+}
+
+/* QUOTE */
+
+.central-box div {
+margin-top: 25px;
+font-style: italic;
+text-align: center;
 }
 
 /* IMAGE */
 
 .side-img {
-    width: 260px;
-    height: auto;
-    flex-shrink: 0;
-}
-
-/* QUOTE SECTION */
-
-.central-box div {
-    margin-top: 30px;
-    text-align: center;
-    font-style: italic;
-    font-size: 1.2rem;
-    line-height: 2;
+width: 240px;
+height: auto;
 }
 
 /* BUTTON */
 
 .explore-btn {
-    display: inline-block;
-    margin-top: 35px;
+display: inline-block;
+margin-top: 25px;
 
-    background: linear-gradient(135deg, #d32f2f, #f57c00);
-    color: white;
-    text-decoration: none;
+```
+background: linear-gradient(135deg, #d32f2f, #f57c00);
+color: white;
+text-decoration: none;
 
-    padding: 16px 36px;
-    border-radius: 50px;
+padding: 14px 30px;
+border-radius: 40px;
 
-    font-size: 1.1rem;
-    font-weight: 600;
+font-weight: 600;
+transition: 0.3s;
+```
 
-    transition: 0.3s;
 }
 
 .explore-btn:hover {
-    transform: translateY(-3px);
+transform: translateY(-2px);
+}
+
+/* WHY SINDHISPARK SECTION */
+
+.home-intro {
+margin-top: 60px;
+background: #fffaf2;
+border-radius: 20px;
+padding: 40px;
+text-align: center;
+box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.home-intro h2 {
+color: #880e4f;
+margin-bottom: 20px;
+}
+
+.home-intro p {
+max-width: 800px;
+margin: 0 auto 15px auto;
+}
+
+/* FOOTER */
+
+footer {
+text-align: center;
+padding: 30px;
+margin-top: 50px;
 }
 
 /* MOBILE */
 
 @media (max-width: 900px) {
 
-    .container {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 40px 25px;
-    }
+```
+.container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 35px 25px;
+}
 
-    .side-img {
-        width: 180px;
-    }
+.side-img {
+    width: 180px;
+}
 
-    .central-box h2 {
-        font-size: 2.2rem;
-    }
+.central-box h2 {
+    font-size: 2.1rem;
+}
 
-    nav {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
+header h1 {
+    font-size: 3rem;
+}
+```
+
 }
